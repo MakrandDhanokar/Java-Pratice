@@ -1,0 +1,435 @@
+import java.io.File;
+import java.nio.charset.Charset;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Scanner;
+import java.lang.Math;
+import java.util.TimeZone;
+
+public class Day1 {
+    public static void main(String[] args) {
+//        1. Write a Java program to print 'Hello' on screen and your
+//        name on a separate line.
+
+//        System.out.println("Enter your name here: ");
+//        Scanner sc = new Scanner(System.in);
+//        String name = sc.nextLine();
+//        System.out.println("Hello " + name );
+
+//        2. Write a Java program to print the sum of two numbers.
+//        Scanner sc = new Scanner(System.in);
+//        int num1 = sc.nextInt();
+//        int num2 = sc.nextInt();
+//        int sum = num1 + num2;
+//        System.out.println("Sum of these two numbers is " + sum);
+
+//        3. Write a Java program to divide two numbers and print them on
+//        the screen.
+
+//        Scanner sc = new Scanner(System.in);
+//        int num1 = sc.nextInt();
+//        int num2 = sc.nextInt();
+//        float div = (float) num1 / num2;
+//        System.out.println("Division of these two numbers is " + div);
+
+//        4. Write a Java program to print the results of the
+//        following operations.
+
+//        float num1 = -5 + 8 * 6;
+//        float num2 = (55+9) % 9;
+//        float num3 = 20 + (float) (-3 * 5) / 8;
+//        float num4 = 5 + (float) 15 / 3 * 2 - 8 % 3;
+//        System.out.println(num1);
+//        System.out.println(num2);
+//        System.out.println(num3);
+//        System.out.println(num4);
+
+//        5. Write a Java program that takes two numbers as input and
+//        displays the product of two numbers.
+
+//        Scanner sc = new Scanner(System.in);
+//        int num1 = sc.nextInt();
+//        int num2 = sc.nextInt();
+//        int product = num1 * num2;
+//        System.out.println("Product is " + product);
+
+//        6. Write a Java program to print the sum (addition), multiply,
+//        subtract, divide and remainder of two numbers.
+
+//        Scanner sc = new Scanner(System.in);
+//        int num1 = sc.nextInt();
+//        int num2 = sc.nextInt();
+//        int add = num1 + num2;
+//        int sub = num1 - num2;
+//        int prod = num1 * num2;
+//        int mod = num1 % num2;
+//        System.out.println(add);
+//        System.out.println(sub);
+//        System.out.println(prod);
+//        System.out.println(mod);
+
+//        7. Write a Java program that takes a number as input and prints its multiplication table up to 10.
+
+//        Scanner sc = new Scanner(System.in);
+//        int num1 = sc.nextInt();
+//        for (int i = 1; i <= 10; i++) {
+//            System.out.println(num1 + " X " + i + " = " + (num1 * i));
+//        }
+
+//        8. Write a Java program to display the following pattern.
+//                Sample Pattern :
+//
+//           J    a   v     v  a
+//           J   a a   v   v  a a
+//        J  J  aaaaa   V V  aaaaa
+//         JJ  a     a   V  a     a
+
+//        System.out.println("   J    a   v     v  a ");
+//        System.out.println("   J   a a   v   v  a a");
+//        System.out.println("J  J  aaaaa   V V  aaaaa");
+//        System.out.println(" JJ  a     a   V  a     a");
+
+//        9. Write a Java program to compute the specified expressions and print the output.
+//        double expression = ((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
+//        System.out.println(expression);
+
+//        10. Write a Java program to compute a specified formula.
+//        double formula = 4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11));
+//        System.out.println(formula);
+
+//        11. Write a Java program to print the area and perimeter of a circle.
+//        float radius = 7.5f;
+//        double Area = Math.PI * radius * radius;
+//        double perimeter = 2 * Math.PI * radius;
+//        System.out.println("Area: " + Area);
+//        System.out.println("Perimeter: " + perimeter);
+
+//        12. Write a Java program that takes three numbers as input to calculate and
+//        print the average of the numbers.
+
+//        Scanner sc = new Scanner(System.in);
+//        int num1 = sc.nextInt();
+//        int num2 = sc.nextInt();
+//        int num3 = sc.nextInt();
+//        float average = (float)(num1 + num2 + num3) / 3;
+//        System.out.println("Average is " + average);
+
+//        13. Write a Java program to print the area and perimeter of a rectangle.
+
+//        Scanner sc = new Scanner(System.in);
+//        int length = sc.nextInt();
+//        int breadth = sc.nextInt();
+//        int area = length * breadth;
+//        int perimeter = 2 * (length + breadth);
+//
+//        System.out.println("Area: " + area);
+//        System.out.println("Perimeter: " + perimeter);
+
+//        for (int i = 0; i < 9; i++) {
+//            System.out.println("* * * * * * ==================================");
+//        }
+//        for (int i = 0; i < 6; i++) {
+//            System.out.println("==============================================");
+//    }
+
+//        15. Write a Java program to swap two variables.
+//        int num1 = 5;
+//        int num2 = 10;
+//        System.out.println("num1: " + num1 + " num2: " + num2);
+//        int temp = num1;
+//        num1 = num2;
+//        num2 = temp;
+//        System.out.println("num1: " + num1 + " num2: " + num2);
+
+//        16. Write a Java program to print a face.
+//        System.out.println(" +\"\"\"\"\"+ ");
+//        System.out.println("[| o o |]");
+//        System.out.println(" |  ^  | ");
+//        System.out.println(" | '-' | ");
+//        System.out.println(" +-----+ ");
+
+//        17. Write a Java program to add two binary numbers.
+
+//        String binary1 = "1010"; // First binary number
+//        String binary2 = "1101"; // Second binary number
+//
+//        // Convert binary strings to integers
+//        int num1 = Integer.parseInt(binary1, 2);
+//        int num2 = Integer.parseInt(binary2, 2);
+//
+//        // Add the numbers
+//        int sum = num1 + num2;
+//
+//        // Convert the sum back to binary
+//        String binarySum = Integer.toBinaryString(sum);
+//
+//        System.out.println("Sum of " + binary1 + " and " + binary2 + " is: " + binarySum);
+
+//        18. Write a Java program to multiply two binary numbers.
+//        19. Write a Java program to convert an integer number to a binary number.
+
+//        int number = 25; // Example number
+//        String binary = Integer.toBinaryString(number);
+//        System.out.println("Binary of " + number + " is: " + binary);
+
+//        20. Write a Java program to convert a decimal number to a hexadecimal number.
+
+//        int num = 15;
+//        System.out.println(num + " Is " + Integer.toHexString(num));
+
+//        21. Write a Java program to convert a decimal number to an octal number.
+
+//        int num = 15;
+//        System.out.println(num + " Is " + Integer.toOctalString(num));
+
+//        23. Write a Java program to convert a binary number to a hexadecimal number.
+
+//        String num = "100";
+//        int decimal = Integer.parseInt(num,2);
+//        String hexadecimalNumber = Integer.toHexString(decimal).toUpperCase();
+//        System.out.println(hexadecimalNumber);
+
+//        24. Write a Java program to convert a binary number to an octal number.
+
+//        String num = "111";
+//        int decimal = Integer.parseInt(num,2);
+//        String octal = Integer.toOctalString(decimal);
+//        System.out.println(octal);
+
+//        25. Write a Java program to convert a octal number to a decimal number.
+
+//        String num = "10";
+//        int decimal = Integer.parseInt(num,8);
+//        System.out.println(decimal);
+
+//        26. Write a Java program to convert a octal number to a binary number.
+
+//        String num = "7";
+//        int decimal = Integer.parseInt(num,8);
+//        String binary = Integer.toBinaryString(decimal);
+//        System.out.println(binary);
+
+//        27. Write a Java program to convert a octal number to a hexadecimal number.
+
+//        String num = "100";
+//        int decimal = Integer.parseInt(num,8);
+//        String hexadecimal = Integer.toHexString(decimal);
+//        System.out.println(hexadecimal);
+
+//        28. Write a Java program to convert a hexadecimal value into a decimal number.
+//        String hexa = "25";
+//        int decimal = Integer.parseInt(hexa, 16);
+//        System.out.println(decimal);
+
+//        29. Write a Java program to convert a hexadecimal number into a binary number.
+
+//        String  hexa = "37";
+//        int decimal = Integer.parseInt(hexa,16);
+//        String binary = Integer.toBinaryString(decimal);
+//        System.out.println(binary);
+
+//        30. Write a Java program to convert a hexadecimal value into an octal number.
+//        String hexa = "40";
+//        int decimal = Integer.parseInt(hexa,16);
+//        String octal = Integer.toOctalString(decimal);
+//        System.out.println(octal);
+
+//        31. Write a Java program to check whether Java is installed on your  computer.
+
+//        System.out.println("\nJava Version: " + System.getProperty("java.version"));
+
+//          32. Write a Java program to compare two numbers.
+
+//        int number1 = 25;
+//        int number2 = 39;
+
+//        if (number1 == number2)
+//            System.out.printf("%d == %d\n", number1, number2);
+//        if (number1 != number2)
+//            System.out.printf("%d != %d\n", number1, number2);
+//        if (number1 < number2)
+//            System.out.printf("%d < %d\n", number1, number2);
+//        if (number1 > number2)
+//            System.out.printf("%d > %d\n", number1, number2);
+//        if (number1 <= number2)
+//            System.out.printf("%d <= %d\n", number1, number2);
+//        if (number1 >= number2)
+//            System.out.printf("%d >= %d\n", number1, number2);
+
+//        33. Write a Java program and compute the sum of an integer's digits.
+
+//        int num = 69;
+//        int sum = 0;
+//        while (num > 0){
+//            sum += num%10;
+//            num /= 10;
+//        }
+//        System.out.println(sum);
+
+//        34. Write a Java program to compute hexagon area.
+
+//        int s = 6;
+//        double Area  = (6 * Math.pow(s,2) )/(4*Math.tan(Math.PI/6));
+//        System.out.println(Area);
+
+//        35. Write a Java program to compute the area of a polygon.
+
+//        int n = 7;
+//        int s = 6;
+//        double Area  = (n*Math.pow(s,2))/(4*Math.tan(Math.PI/n));
+//        System.out.println(Area);
+
+//        36. Write a Java program to compute the distance between two points on the earth's surface.
+//        double x1 = 25;
+//        double y1 = 35;
+//        double x2 = 35.5;
+//        double y2 = 25.5;
+//        double radius = 6371.01;
+//        double d = radius * Math.arccos(sin(x1) * sin(x2) + cos(x1) * cos(x2) * cos(y1 - y2));
+
+//        37. Write a Java program to reverse a string.
+
+//        String str = "tejas";
+//        StringBuilder rev = new StringBuilder();
+//        for (int i = str.length()-1; i >= 0; i--) {
+//            rev.append(str.charAt(i));
+//        }
+//        System.out.println(rev);
+
+//        38. Write a Java program to count letters, spaces, numbers and other characters in an input string.
+
+//        int letter = 0;
+//        int space = 0;
+//        int num = 0;
+//        int other = 0;
+//
+//        String test = "Aa kiu, I swd skieo 236587. GH kiu: sieo?? 25.33";
+//
+//        char[] ch = test.toCharArray();
+//
+//        // Iterate through the character array to categorize characters
+//        for (int i = 0; i < test.length(); i++) {
+//            // Check if the character is a letter
+//            if (Character.isLetter(ch[i])) {
+//                letter++;
+//            }
+//            // Check if the character is a digit (number)
+//            else if (Character.isDigit(ch[i])) {
+//                num++;
+//            }
+//            // Check if the character is a space
+//            else if (Character.isSpaceChar(ch[i])) {
+//                space++;
+//            }
+//            // Character falls into the "other" category if none of the above conditions are met
+//            else {
+//                other++;
+//            }
+//        }
+//
+//        // Display the original string
+//        System.out.println("The string is : Aa kiu, I swd skieo 236587. GH kiu: sieo?? 25.33");
+//
+//        // Display the counts of letters, spaces, numbers, and other characters
+//        System.out.println("letter: " + letter);
+//        System.out.println("space: " + space);
+//        System.out.println("number: " + num);
+//        System.out.println("other: " + other);
+
+//        39. Write a Java program to create and display a unique three-digit number using
+//        1, 2, 3, 4. Also count how many three-digit numbers are there.
+
+//        int amount = 0;
+//        for (int i = 1; i <= 4; i++) {
+//            for (int j = 1; j <= 4; j++) {
+//                for (int k = 1; k <= 4; k++) {
+//                    if (k != i && k != j && i != j) {
+//                        amount++;
+//                        System.out.println(i + "" + j + "" + k);
+//                    }
+//                }
+//            }
+//        }
+//        System.out.println(amount);
+
+//        40. Write a Java program to list the available character sets in charset objects.
+
+//        System.out.println("List of available character sets: ");
+//
+//        // Iterate through the available character sets and print their names
+//        for (String str : Charset.availableCharsets().keySet()) {
+//            System.out.println(str);
+//        }
+
+//        41. Write a Java program to print the ASCII value of a given character.
+
+//        int chr = 'Z';
+//        System.out.println("The ASCII value of Z is: " + chr);
+
+//        42. Write a Java program to input and display your password.
+
+//        String pass = "Password";
+//        System.out.println(pass);
+
+//        43. Write a Java program to print the following string in a specific format (see output).
+
+//        System.out.println("\nTwinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!\n\n");
+
+//        44. Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn.
+
+//        int n = 5;
+//        System.out.printf("%d + %d%d  + %d%d%d\n", n, n, n, n, n, n);
+
+//        45. Write a Java program to find the size of a specified file.
+//        System.out.println("/home/students/abc.txt  : " + new File("abc.txt").length() + " bytes");
+//        System.out.println("/home/students/test.txt : " + new File("test.txt").length() + " bytes");
+
+//        46. Write a Java program to display system time.
+
+//        System.out.format("\nCurrent Date time: %tc%n\n", System.currentTimeMillis());
+
+//        47. Write a Java program to display the current date and time in a specific format.
+
+//        SimpleDateFormat cdt = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss.SSS");
+//        cdt.setCalendar(Calendar.getInstance(TimeZone.getTimeZone("GMT")));
+//        System.out.println("\nNow: " + cdt.format(System.currentTimeMillis()));
+
+//        48. Write a Java program to print odd numbers from 1 to 99. Prints one number per line.
+
+//        for (int i = 1; i < 100; i++) {
+//            if (i % 2 != 0)
+//                System.out.println(i);
+//        }
+
+//        49. Write a Java program to accept a number and check whether the number is even or not.
+//        Prints 1 if the number is even or 0 if odd.
+
+//        int num = 20;
+//        if (num % 2 == 0)
+//            System.out.println(1);
+//        else
+//            System.out.println(0);
+
+//        50. Write a Java program to print numbers between 1 and 100 divisible by 3, 5 and both.
+
+        System.out.println("\nDivided by 3: ");
+        for (int i = 1; i < 100; i++) {
+            if (i % 3 == 0)
+                System.out.print(i + ", ");
+        }
+
+        // Print numbers divided by 5
+        System.out.println("\n\nDivided by 5: ");
+        for (int i = 1; i < 100; i++) {
+            if (i % 5 == 0)
+                System.out.print(i + ", ");
+        }
+
+        // Print numbers divided by both 3 and 5
+        System.out.println("\n\nDivided by 3 & 5: ");
+        for (int i = 1; i < 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0)
+                System.out.print(i + ", ");
+        }
+    }
+}
